@@ -124,9 +124,9 @@ nav a:focus{
 
     margin-top: 1em;
     padding: 0.4em;
-    border-radius: 1.5em;
-    border-top: solid 2px var(--text-color);
-    border-bottom: solid 2px var(--text-color);
+    border-radius: 1.3em;
+    border-top: solid 1px var(--text-color);
+    border-bottom: solid 1px var(--text-color);
     background-color: var(--primary-color);
 }
 .post-date{
