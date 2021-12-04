@@ -1,6 +1,7 @@
 :root{
-    --primary-color: #fff;
-    --secondary-color: #121212;
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(255, 255, 255);
+    --text-color: #121212;
     --accent-color: #4E9F3D;
 }
 /* General */
@@ -9,17 +10,16 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 .flex-type{
     display: flex;
 }
 a{
     text-decoration: none;
-    color: var(--accent-color);
 }
 a:visited{
-    color: var(--accent-color);
+    color: var(--text-color);
 }
 a:hover,
 a:focus{
@@ -38,19 +38,24 @@ li{
 }
 h1{
     font-weight: 400;
-    color: var(--secondary-color);
+    color: var(--text-color);
     text-align: center;
 }
-
+.text-accent{
+    color: var(--accent-color);
+}
 /* Colors */
 i{
-    color: var(--secondary-color);
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 /* Layout */
 /* Nav */
 .nav-header{
     background-color: var(--primary-color);
+    color: var(--text-color);
+    border-bottom: solid 1px var(--text-color);
 }
 .nav-container{
     display: flex;
@@ -85,18 +90,19 @@ nav ul{
 }
 nav a{
     text-decoration: none;
+    color: var(--text-color);
 }
 nav a:visited{
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 nav a:hover,
 nav a:focus{
     color: var(--accent-color);
-    outline: solid 1px var(--accent-color);
+    outline: none;
     border-radius: 5px;
 }
 .current-page{
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--text-color);
 }
 
 
@@ -105,6 +111,10 @@ nav a:focus{
 .home-post{
     margin-top: 1em;
     padding: 0.4em;
+    border-radius: 9px;
+    border-top: solid 1px var(--text-color);
+    border-bottom: solid 1px var(--text-color);
+    background-color: var(--primary-color);
 }
 .post-date{
     color: gray;
@@ -113,5 +123,10 @@ nav a:focus{
     margin-top: 0.6em;
 }
 .continue-link{
+    display: block;
     margin-top: 1em;
+    color: var(--accent-color);
+}
+.continue-link:visited{
+    color: var(--accent-color);
 }
