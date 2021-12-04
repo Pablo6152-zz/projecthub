@@ -1,0 +1,95 @@
+:root{
+    --primary-color: #fff;
+    --secondary-color: #121212;
+    --accent-color: #4E9F3D;
+}
+/* General */
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.flex-type{
+    display: flex;
+}
+/* Typography */
+h1,
+h2,
+p,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/* Layout */
+/* Nav */
+.nav-header{
+    background-color: var(--primary-color);
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.width-container{
+    margin: 0 auto;
+    width: 85%;
+}
+nav li{
+    list-style: none;
+    margin-bottom: 0.3em;
+}
+nav ul{
+    flex-direction: column;
+    margin: 0;
+}
+@media (orientation: landscape) {
+    .nav-container{
+        flex-direction: row;
+    }
+    nav li{
+        margin-left: 1em;
+    }
+    nav ul{
+        flex-direction: row;
+        margin: 0;
+    }
+}
+nav a{
+    text-decoration: none;
+}
+nav a:visited{
+    color: var(--secondary-color);
+}
+nav a:hover,
+nav a:focus{
+    color: var(--accent-color);
+    outline: solid 1px var(--accent-color);
+    border-radius: 5px;
+}
+.current-page{
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+
+/* Articles */
+
+.home-post{
+    margin-top: 1em;
+}
+.post-date{
+
+}
+.post-description{
+    margin-top: 0.6em;
+}
