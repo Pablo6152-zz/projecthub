@@ -12,7 +12,7 @@ function setTheme(theme) {
     let root = document.documentElement;
     if (theme === 0) {
 
-        root.style.setProperty('--primary-color', 'rgb(255, 255, 255)');
+        root.style.setProperty('--primary-color', '#fff');
         root.style.setProperty('--text-color', '#000');
         root.style.setProperty('--secondary-color', 'rgb(255, 255, 255)');
         root.style.setProperty('--accent-color', '#4E9F3D'); 
