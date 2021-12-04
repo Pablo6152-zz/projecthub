@@ -1,24 +1,11 @@
 let darkmode = localStorage.getItem("darkmode")
-
-
-
 const themeBtn = document.getElementById("theme-btn")
 
-
-
-
-// "baseSalaryEl && workingHoursEl" inputs are redundant, You might be able to simplify the funcionality
-// Maybe predifining the base salary but letting the user modify it might help
 
 // When page loads
 if (JSON.parse(darkmode)){
     setTheme(1)
 } else {themeBtn.textContent = `brightness_7`}
-
-
-// Modals
-
-
 
 // Dark mode
 function setTheme(theme) {
