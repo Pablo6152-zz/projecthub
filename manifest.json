@@ -1,0 +1,20 @@
+{
+    "background_color": "#252525",
+    "description": "Pablo's Hub",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "programming.png",
+        "sizes": "192x192",
+        "type": "img/png"
+      },
+      {
+        "src": "programming.png",
+        "sizes": "512x512",
+        "type": "img/png"
+      }
+    ],
+    "name": "Pablo's Hub",
+    "short_name": "Hub",
+    "start_url": "index.html"
+  }
