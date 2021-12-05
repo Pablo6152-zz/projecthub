@@ -1,19 +1,24 @@
 :root{
-    --primary-color: #f5f5f5;
-    --secondary-color: #9E9E9E;
+    --primary-color: #f5f5fa;
+    --secondary-color: #b6b7d5;
     --text-color: #121212;
     --primary-accent-color: #4E9F3D;
     --secondary-accent-color: #303F9F;
     --tertiary-accent-color: #D32F2F;
 }
 /* General */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
 body{
-    box-sizing: border-box;
+    
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--secondary-color);
     color: var(--text-color);
-    width: 100%;
+    
 }
 .flex-type{
     display: flex;
@@ -45,12 +50,11 @@ h1{
 .text-accent{
     color: var(--primary-accent-color);
 }
-.article-title{
-    font-weight: 400;
-}
+.article-title,
 .recommended-title{
     font-weight: 400;
 }
+
 img{
     width: 45%;
     margin: 0 auto;
@@ -62,15 +66,13 @@ i{
     cursor: pointer;
 }
 .primary-box-shadow{
-    box-shadow: -3px -3px 0px var(--primary-accent-color);
-    border-radius: 5px;
+    box-shadow: 2px 2px 0px var(--primary-accent-color);
 }
 .secondary-box-shadow{
-    box-shadow: -3px -3px 0px var(--secondary-accent-color);
-    border-radius: 5px;
+    box-shadow: 2px 2px 0px var(--secondary-accent-color);
 }
 .important-box-shadow{
-    box-shadow: -3px -3px 0px var(--tertiary-accent-color);
+    box-shadow: 2px 2px 0px var(--tertiary-accent-color);
 }
 
 /* Layout */
@@ -139,77 +141,93 @@ nav a:focus{
 }
 /* Articles */
 
-.all-articles{
-    display: flex;
-    flex-direction: column;
-}
-
-.featured{
-    border-bottom: solid 1px var(--text-color);
-    padding-bottom: 1em;
-    border-radius: 5px;
-}
-.recommended-articles{
+.post{
     background-color: var(--primary-color);
-    margin: 2em 0;
-}
-.regular-post-style{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
     margin-top: 1em;
-    padding: 0.5;
-    
-    background-color: var(--primary-color);
-}
-.recommended-post-style{
-    
-    border-bottom: solid 1px var(--primary-accent-color);
     padding: 0.5em;
+    border-radius: 5px;
+
+}
+
+.articles-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-post-style{
+    padding-bottom: 1em;
+    
+}
+/* .regular-container{
+
+} */
+.recommended-container{
+    background-color: var(--primary-color);
+    margin: 1em 0;
+    border-radius: 5px;
+}
+/* .regular-post-style{
+    
+} */
+.recommended-post-style{
+    border-bottom: solid 1px var(--secondary-accent-color);
+    padding: 0.5em;
+    overflow: hidden;
 }
 .post-date{
     color: gray;
-    margin-top: 0.4em;
+    margin-bottom: 0.4em;
 }
 .post-description{
     margin-top: 0.6em;
 }
 .continue-link{
-    display: block;
     margin-top: 1em;
-    color: var(--primary-accent-color);
+
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 0.3em 0.7em;
+    text-shadow: rgb(0 0 0 / 12%) 0px 3px 8px;
+    background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
+    transition: all 0.5s ease 0s;
+    color: #fff;
 }
 .continue-link:visited{
-    color: var(--primary-accent-color);
+    color: #fff;
 }
-
+.continue-link:hover{
+    box-shadow: rgb(80 63 205 / 50%) 0px 1px 40px;
+    transition: all 0.1s ease 0s;
+}
 @media (orientation: landscape) {
-    .all-articles{
-        align-items: flex-start;
-    }
-    .regular-posts{
+    .regular-container{
         width: 70%;
     }
     .recommended-post-style{
         margin-top: 1em;
+        padding: 0.3em;
     }
-    .recommended-articles{
+    .recommended-container{
         width: 30%;
-        margin: 1em 1em 0 1em;
+        margin: 1em 0 0 1em;
     }
-    .all-articles{
+    .articles-container{
+        align-items: flex-start;
         flex-direction: row;
     }
 }
 
 .project{
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 1em;
-    border-radius: 5px;
     border-top: solid 1px var(--text-color);
     border-bottom: solid 1px var(--text-color);
-    
-    background-color: var(--primary-color);
 }
