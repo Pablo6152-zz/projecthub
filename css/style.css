@@ -49,23 +49,16 @@ h1{
 }
 .text-accent{
     color: var(--primary-accent-color);
-    font-weight: 700;
 }
-.article-title{
+.article-title,
+.recommended-title{
     font-weight: 400;
 }
-.recommended-title{
-    font-weight: 700;
-}
+
 img{
-    max-width: 75%;
+    width: 45%;
     margin: 0 auto;
     border-radius: 9px;
-}
-@media (orientation: landscape){
-    img{
-        max-width: 45%;
-    }
 }
 /* Colors */
 i{
@@ -73,19 +66,15 @@ i{
     cursor: pointer;
 }
 .primary-box-shadow{
-    box-shadow: 2px 2px 5px var(--primary-accent-color);
+    box-shadow: 2px 2px 0px var(--primary-accent-color);
 }
 .secondary-box-shadow{
-    box-shadow: 2px 2px 5px var(--secondary-accent-color);
+    box-shadow: 2px 2px 0px var(--secondary-accent-color);
 }
 .important-box-shadow{
-    box-shadow: 2px 2px 5px var(--tertiary-accent-color);
+    box-shadow: 2px 2px 0px var(--tertiary-accent-color);
 }
-.logo-link{
-    text-shadow: rgb(0 0 0 / 12%) 0px 3px 8px;
 
-    transition: all 0.5s ease 0s;
-}
 /* Layout */
 .width-container{
     margin: 0 auto;
@@ -185,14 +174,13 @@ nav a:focus{
     
 } */
 .recommended-post-style{
-    border-bottom: solid 2px var(--secondary-accent-color);
+    border-bottom: solid 1px var(--secondary-accent-color);
     padding: 0.5em;
     overflow: hidden;
 }
 .post-date{
     color: gray;
     margin-bottom: 0.4em;
-    font-size: 0.8em;
 }
 .post-description{
     margin-top: 0.6em;
@@ -207,7 +195,7 @@ nav a:focus{
     color: #fff;
     font-weight: 500;
     border-radius: 6px;
-    font-size: 0.9em;
+    font-size: 14px;
     padding: 0.3em 0.7em;
     text-shadow: rgb(0 0 0 / 12%) 0px 3px 8px;
     background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
@@ -242,7 +230,4 @@ nav a:focus{
 .project{
     border-top: solid 1px var(--text-color);
     border-bottom: solid 1px var(--text-color);
-}
-.test{
-    
 }

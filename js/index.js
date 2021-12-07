@@ -40,8 +40,3 @@ themeBtn.addEventListener("click", function(){
         setTheme(0)
     }
 })
-
-if ("serviceWorker" in navigator) {
-    // register service worker
-    navigator.serviceWorker.register("service-worker.js");
-  }
