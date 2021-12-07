@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,25 +15,66 @@
     
     <header class="nav-header">
         <div class="nav-container width-container">
-            <h1>Pablo's industries</h1>
+            <h1>Pablo's <span class="text-accent">hub</span></h1>
             <nav>
-                <ul class="flex-type">
-                    <li><a href="" class="current-page">Home</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                <ul class="nav-links flex-type">
+                    <i id="theme-btn" class="material-icons darkmode-toggle">brightness_2</i>
+                    <li><a href="#" class="current-page">Home</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <article class="home-post width-container">
-        <h2>Efficient services</h2>
+    <article class="post featured-post-style important-box-shadow width-container">
+        <h2 class="article-title">Launched the very first version! (Featured post)</h2>
         <p class="post-date">December, 1st, 2021</p>
         <p class="post-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit quam deserunt dolores, iure suscipit explicabo quisquam, distinctio rerum maiores repudiandae, expedita culpa reprehenderit vel odio eum natus voluptatibus ducimus non!</p>
-        <img src="" alt="">
-        <a href="" class="continue-link">Continue reading...</a>
+        <a href="./articles/ver1.html" class="continue-link">Continue reading...</a>
     </article>
 
+    <div class="articles-container width-container">
+
+        
+        <div class="regular-container">
+            <article class="post regular-post-style primary-box-shadow">
+                <h2 class="article-title">"Regular" posts!</h2>
+                <p class="post-date">December, 1st, 2021</p>
+                <p class="post-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit quam deserunt dolores, iure suscipit explicabo quisquam, distinctio rerum maiores repudiandae, expedita culpa reprehenderit vel odio eum natus voluptatibus ducimus non!</p>
+                <a href="./articles/ver1.html" class="continue-link">Continue reading...</a>
+            </article>
+            <article class="post regular-post-style primary-box-shadow">
+                <h2 class="article-title">"Regular" posts!</h2>
+                <p class="post-date">December, 1st, 2021</p>
+                <p class="post-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit quam deserunt dolores, iure suscipit explicabo quisquam, distinctio rerum maiores repudiandae, expedita culpa reprehenderit vel odio eum natus voluptatibus ducimus non!</p>
+                <a href="./articles/ver1.html" class="continue-link">Continue reading...</a>
+            </article>
+            <article class="post regular-post-style primary-box-shadow">
+                <h2 class="article-title">"Regular" posts!</h2>
+                <p class="post-date">December, 1st, 2021</p>
+                <p class="post-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit quam deserunt dolores, iure suscipit explicabo quisquam, distinctio rerum maiores repudiandae, expedita culpa reprehenderit vel odio eum natus voluptatibus ducimus non!</p>
+                <a href="./articles/ver1.html" class="continue-link">Continue reading...</a>
+            </article>
+
+
+        </div>
+        
+        <aside class="recommended-container secondary-box-shadow">
+            <article class="post recommended-post-style">
+                <h2 class="recommended-title">"Recommended" aside posts!</h2>
+                <p class="post-date">December, 1st, 2021</p>
+                <a href="" class="continue-link">Start reading...</a>
+            </article>
+            <article class="post recommended-post-style">
+                <h2 class="recommended-title">"Recommended" aside posts!</h2>
+                <p class="post-date">December, 1st, 2021</p>
+                <a href="" class="continue-link">Start reading...</a>
+            </article>
+        </aside>
+    </div>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>

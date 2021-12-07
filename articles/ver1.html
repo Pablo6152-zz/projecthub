@@ -5,31 +5,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    
+    <link rel="stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Ver1.0</title>
 </head>
-<body>
+<body class="test">
     <header class="nav-header">
         <div class="nav-container width-container">
             <h1>Pablo's <span class="text-accent">hub</span></h1>
+            <i id="theme-btn" class="material-icons darkmode-toggle">brightness_2</i>
             <nav>
                 <ul class="flex-type">
-                    <i id="theme-btn" class="material-icons darkmode-toggle">brightness_2</i>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="#" class="current-page">Contact</a></li>
+                    <li class="go-back-li">
+                        <a href="../index.html">Go back</a>
+                    </li>
                 </ul>
             </nav>
         </div>
-    </header>
-
-
-    <script src="./js/index.js"></script>
-
+    </header>  
+    
+    <div class="post post-content width-container">
+        <h2 class="article-title">Launched the very first version!</h2>
+        <p class="post-date">December, 1st, 2021</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea aliquid minima quos vero eligendi ipsa consequatur autem. Enim, fugit impedit itaque rem similique tempora repellendus. Voluptates nesciunt necessitatibus ex dolorem.</p>
+    </div>
+    <script src="../js/index.js"></script>
 </body>
 </html>
