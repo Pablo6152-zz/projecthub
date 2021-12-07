@@ -6,6 +6,7 @@
     --secondary-accent-color: #303F9F;
     --tertiary-accent-color: #D32F2F;
 }
+
 /* General */
 * { 
     -moz-box-sizing: border-box; 
@@ -80,8 +81,6 @@ i{
     margin: 0 auto;
     width: 95%;
 }
-
-
 
 /* Nav */
 .nav-header{
@@ -230,4 +229,9 @@ nav a:focus{
 .project{
     border-top: solid 1px var(--text-color);
     border-bottom: solid 1px var(--text-color);
+}
+
+/* Journaling */
+.post-text-content{
+    margin-top: 0.4em;
 }
