@@ -81,6 +81,12 @@ i{
     margin: 0 auto;
     width: 95%;
 }
+@media (orientation: landscape){
+    .width-container{
+        margin: 0 auto;
+        width: 60%;
+    }
+}
 
 /* Nav */
 .nav-header{
@@ -169,9 +175,11 @@ nav a:focus{
     margin: 1em 0;
     border-radius: 5px;
 }
-/* .regular-post-style{
-    
-} */
+.regular-post-style{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} 
 .recommended-post-style{
     border-bottom: solid 1px var(--secondary-accent-color);
     padding: 0.5em;
@@ -234,4 +242,7 @@ nav a:focus{
 /* Journaling */
 .post-text-content{
     margin-top: 0.4em;
+}
+.line-break{
+    margin: 0.7em 0;
 }
